@@ -16,3 +16,7 @@ commands:
     usage: /<command>
   gms:
     description: Sets your game mode to survival.
+    usage: /<command>
+  shortcmds:
+    description: Info of the plugin
+    usage: /<command>
