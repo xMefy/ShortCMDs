@@ -1,9 +1,6 @@
 package me.mefyy.shortcmds;
 
-import me.mefyy.shortcmds.commands.CreativeCommand;
-import me.mefyy.shortcmds.commands.FeedCommand;
-import me.mefyy.shortcmds.commands.GodCommand;
-import me.mefyy.shortcmds.commands.SurvivalCommand;
+import me.mefyy.shortcmds.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
@@ -20,6 +17,7 @@ public final class Main extends JavaPlugin {
         getCommand("gms").setExecutor(new SurvivalCommand());
         getCommand("god").setExecutor(new GodCommand());
         getCommand("feed").setExecutor(new FeedCommand());
+        getCommand("scmds").setExecutor(new InfoCommand());
 
     }
 
@@ -36,5 +34,6 @@ public final class Main extends JavaPlugin {
 
         onDisable();
         onEnable();
+
     }
 }
